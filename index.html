@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="#destinations">Destinations</a></li>
                     <li><a href="#inspo">Inspirations</a></li>
-                    <li><a href="#special">Special</a></li>
+                    <li><a href="#special">Specials</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
@@ -57,8 +57,9 @@
                     <img src="images/majorca-cove-L.png" alt="Panoramic Cliff Side View Featuring Trees & Houses Located Next to the Ocean Alongside Majorca Cove">
                     </picture>
             </section>
-            <!-- Plan Your Trip  -->
-             <section id="plan">
+            <!-- Inspirations  -->
+             <section id="inspo">
+                <!-- Plan Your Trip  -->
                 <h2>Plan Your Trip</h2>
 
                 <!-- How to Get There -->
@@ -79,8 +80,9 @@
                  </a>
                  </section>
 
-                 <!-- Places to Stay -->
-                  <section id="places">
+                 <!-- Specials -->
+                  <section id="special">
+                     <!-- Places to Stay -->
                     <h3>Places to Stay</h3>
                     <!-- SVG  -->
                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -230,7 +232,70 @@
                  </svg>
                  <p>Population: 923,608</p>
               </section>
+              <!-- Contact  -->
+               <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
 
-        
+                    <!-- First Name -->
+		            <label for="f-name">First Name <span class="required">*</span></label>
+		            <input type="text" id="f-name" name="f-name" required aria-required="true" autocomplete="given-name">
+
+		            <!-- Last Name -->
+		            <label for="l-name">Last Name <span class="required">*</span></label>
+		            <input type="text" id="l-name" name="l-name" required aria-required="true" autocomplete="family-name">
+
+                    <!-- Preferred Contact Method -->
+		            <fieldset>
+			        <legend>Preferred Contact Method <span class="required">*</span></legend>
+			        <input type="radio" id="pcm-email" name="pcm" value="email" required aria-required="true">
+			        <label for="pcm-email">Email</label>
+                    <input type="radio" id="pcm-text" name="pcm" value="text" required aria-required="true">
+			        <label for="pcm-text">Text</label>
+			        <input type="radio" id="pcm-phone" name="pcm" value="phone" required aria-required="true"> 
+			        <label for="pcm-phone">Phone</label>
+		            </fieldset>
+
+                    <!-- Email -->
+		            <label for="email">Email <span class="required">*</span></label>
+		            <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+
+		            <!-- Phone -->
+		            <label for="phone">Phone Number <span class="required">*</span></label>
+		            <input type="tel" id="phone" name="phone" required aria-required="true" autocomplete="tel">
+
+                    <!-- Destination -->
+		            <label for="des">Destinations <span class="required">*</span></label>
+			        <select name="des" id="des">
+				    <option value="">Select Your Destination</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="granada">Granada</option>
+                    <option value="ibiza">Ibiza</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="majorca">Majorca</option>
+                    <option value="seville">Seville</option>
+                    <option value="tenerife">Tenerife</option>
+                    <option value="valencia">Valencia</option>
+                    </select>
+
+                    <!-- Travel Time -->
+                    <label for="ttime">Travel Time <span class="required">*</span></label>
+			        <select name="ttime" id="ttime">
+				    <option value="">Travel Time Preference</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="flexible">Flexible</option>
+                    </select>
+                </form>
+               </section>
          </main>
+         <footer>
+		<p>Copyright &copy; 2021 - Wunderlust</p>
+        <ul>
+            <li><a href="#">Privacy Statement</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
     </body>
